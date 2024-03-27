@@ -1,0 +1,21 @@
+.wrapper {
+    padding: 8px;
+    box-sizing: border-box;
+    .componentItem {
+        width: 130px;
+        height: 100px;
+        border: 1px solid #bbb;
+        cursor: pointer;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s; /* 添加一个过渡效果，让发光效果更平滑 */
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 10px 5px fade(#1677ff, 30); /* 添加发光效果，可以根据需要调整阴影的大小、颜色和透明度 */
+            color: #1677ff;
+        }
+    }
+}
